@@ -1,0 +1,271 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+}
+
+li {
+  list-style: none;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+label {
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+table {
+  height: auto;
+  width: 100%;
+  padding: 0;
+}
+
+thead {
+  background-color: #555;
+}
+
+th {
+  margin: 20px;
+}
+
+tbody {
+  width: auto;
+  height: auto;
+  background-color: #fff;
+}
+
+tbody, td, tr, th, thead {
+  padding: 10px;
+}
+
+td {
+  /* border: 1px solid #555; */
+  box-shadow: 1px 1px 10px #555;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-bottom: 2px solid #000;
+}
+
+.navbar-logo {
+  font-size: 30px;
+  font-weight: 800;
+  color: #000;
+  text-decoration: none;
+}
+
+.my-nav {
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  transition: all .5s;
+  padding: 5px 10px;
+}
+.nav-link:hover {
+  opacity: 70%;
+  background-color: #333;
+  border-radius: 5px;
+}
+
+.nav-icon {
+  display: none;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  max-width: 50vw;
+}
+
+.form-control {
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  font-size: 18px;
+}
+
+.date-picker {
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.submit-btn {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  width: auto;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  transition: all .5s;
+}
+
+.submit-btn:hover {
+  opacity: 90%;
+}
+
+.delete-link {
+  border: 0;
+  background: transparent;
+  padding: 5px;
+  text-decoration: underline;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.form-con {
+  padding: 20px;
+}
+
+.user-div {
+  height: 200px;
+  width: 200px;
+  border: 1px solid;
+}
+
+
+/* MEDIA QUERIES ---------  */
+@media screen and (max-width: 800px) {
+  
+  td {
+    box-shadow: 1px 1px 5px #555;
+  }
+  
+  .navbar {
+    justify-content: space-between;
+  }
+  
+  .navbar-logo {
+    font-size: 25px;
+  }
+  
+  .nav-link {
+    font-size: 18px;
+  }
+}
+
+
+@media screen and (max-width: 540px) {
+  
+  h3 {
+    font-size: 18px;
+  }
+  
+  form {
+    gap: 5px;
+    margin: 5px 0;
+  }
+  
+  label {
+    font-size: 16px;
+    margin: 3px 0;
+  }
+
+  table {
+    width: calc(100% * 2);
+  }
+  
+  th {
+    margin: 0;
+  }
+  
+  tbody, td, tr, th, thead {
+    padding: 5px;
+    font-size: 12px;
+  }
+  
+  td {
+    box-shadow: 1px 1px 5px #555;
+  }
+  
+  .navbar {
+    justify-content: space-between;
+    gap: 0;
+  }
+  
+  .navbar-logo {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .my-nav {
+    gap: 5px;
+    padding: 10px;
+  }
+  
+  .nav-link {
+    font-size: 20px;
+  }
+
+  .nav-link span {
+    display: none;
+  }
+
+  .nav-icon {
+    display: unset;
+  }
+  
+  .form-group {
+    max-width: 100vw;
+  }
+  
+  .form-control {
+    padding: 5px;
+    font-size: 15px;
+  }
+  
+  .date-picker {
+    padding: 5px;
+    font-size: 15px;
+    width: 100px;
+  }
+  
+  .submit-btn {
+    font-size: 15px;
+  }
+  
+  .delete-link {
+    font-size: 13px;
+  }
+  
+  .form-con, .exercise-list-con {
+    padding: 5px;
+  }
+
+  .exercise-list-con {
+    overflow-x: scroll;
+  }
+}
